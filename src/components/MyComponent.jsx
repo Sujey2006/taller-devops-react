@@ -23,12 +23,13 @@ const MyComponent = () => {
         alignItems: 'center',
         justifyContent: 'center',
         boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
-        border: '4px solid rgba(255,255,255,0.3)'
+        border: '4px solid rgba(255,255,255,0.3)',
+        overflow: 'hidden'
       }}>
         <img
-          src="https://api.dicebear.com/7.x/big-smile/svg?seed=Daniel&mood=happy"
+          src="https://api.dicebear.com/7.x/avataaars/svg?seed=Daniel&skinColor=fbe1d3&top=shortHair&hairColor=2c1b18"
           alt="Avatar Daniel"
-          style={{ width: '100px' }}
+          style={{ width: '110px', marginTop: '10px' }}
         />
       </div>
 
@@ -62,8 +63,7 @@ const MyComponent = () => {
           marginTop: '20px',
           cursor: 'pointer',
           fontWeight: 'bold',
-          width: '100%',
-          transition: 'all 0.3s ease'
+          width: '100%'
         }}
       >
         Contactar
