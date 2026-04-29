@@ -3,59 +3,59 @@ import React from 'react';
 const MyComponent = () => {
   return (
     <div style={{
-      background: 'linear-gradient(135deg, #FF9a9e 0%, #Fecfef 100%)',
+      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       borderRadius: '20px',
       padding: '30px',
       width: '320px',
       margin: '20px',
-      boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+      boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
       textAlign: 'center',
       fontFamily: "'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-      transition: 'transform 0.3s ease'
+      color: 'white'
     }}>
       <div style={{
-        backgroundColor: 'white',
+        backgroundColor: '#ffffff',
         borderRadius: '50%',
-        width: '100px',
-        height: '100px',
+        width: '120px',
+        height: '120px',
         margin: '0 auto 20px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
+        boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
+        border: '4px solid rgba(255,255,255,0.3)'
       }}>
         <img
-          src="https://api.dicebear.com/7.x/avataaars/svg?seed=TuNombre"
-          alt="Avatar Estudiante"
-          style={{ width: '85px' }}
+          src="https://api.dicebear.com/7.x/big-smile/svg?seed=Daniel&mood=happy"
+          alt="Avatar Daniel"
+          style={{ width: '100px' }}
         />
       </div>
 
-      <h2 style={{ color: '#d81b60', margin: '10px 0', fontSize: '1.5rem' }}>Tu Nombre - Dev</h2>
+      <h2 style={{ color: '#fff', margin: '10px 0', fontSize: '1.6rem', fontWeight: 'bold' }}>Daniel Agudelo</h2>
+      <p style={{ color: '#e0e0e0', fontSize: '0.9rem', marginBottom: '15px' }}>Full Stack Developer</p>
 
-      <p style={{ color: '#4a4a4a', fontSize: '0.95rem', lineHeight: '1.5', minHeight: '60px' }}>
-        ¡Hola mundo! He configurado este componente para el taller de DevOps. ¡Integración continua activada!
+      <p style={{ color: '#f0f0f0', fontSize: '0.95rem', lineHeight: '1.5', minHeight: '60px' }}>
+        ¡Hola! Soy Daniel. He personalizado este componente para demostrar el flujo de CI/CD en nuestro taller.
       </p>
 
       <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '8px',
-        marginTop: '15px'
+        background: 'rgba(255,255,255,0.1)',
+        borderRadius: '15px',
+        padding: '15px',
+        marginTop: '15px',
+        textAlign: 'left'
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem' }}>
-          ✅ <span>React + Vite</span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem' }}>
-          ✅ <span>CI/CD con Netlify</span>
-        </div>
+        <div style={{ marginBottom: '5px' }}>🚀 <b>Skills:</b></div>
+        <div style={{ fontSize: '0.85rem' }}>• Git & GitHub Expert</div>
+        <div style={{ fontSize: '0.85rem' }}>• React + Vite Master</div>
       </div>
 
       <button
-        onClick={() => alert('¡Componente desplegado con éxito! 🚀')}
+        onClick={() => alert('¡Hola! Soy Daniel Agudelo, bienvenido a mi sección.')}
         style={{
-          background: '#d81b60',
-          color: 'white',
+          background: '#fff',
+          color: '#764ba2',
           border: 'none',
           padding: '12px 25px',
           borderRadius: '25px',
@@ -63,10 +63,10 @@ const MyComponent = () => {
           cursor: 'pointer',
           fontWeight: 'bold',
           width: '100%',
-          boxShadow: '0 4px 15px rgba(216, 27, 96, 0.3)'
+          transition: 'all 0.3s ease'
         }}
       >
-        ¡Saludar!
+        Contactar
       </button>
     </div>
   );
