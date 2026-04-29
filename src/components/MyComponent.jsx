@@ -3,29 +3,70 @@ import React from 'react';
 const MyComponent = () => {
   return (
     <div style={{
-      border: '2px solid #4CAF50',
-      borderRadius: '8px',
-      padding: '20px',
-      margin: '10px',
-      backgroundColor: '#f9f9f9',
-      boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
+      background: 'linear-gradient(135deg, #FF9a9e 0%, #Fecfef 100%)',
+      borderRadius: '20px',
+      padding: '30px',
+      width: '320px',
+      margin: '20px',
+      boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+      textAlign: 'center',
+      fontFamily: "'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      transition: 'transform 0.3s ease'
     }}>
-      <h2 style={{ color: '#4CAF50' }}>Componente de [Tu Nombre]</h2>
-      <p>Este es mi aporte individual para el taller de DevOps.</p>
-      <ul>
-        <li>✅ React con Vite</li>
-        <li>✅ Git & GitHub</li>
-        <li>✅ CI/CD con Netlify</li>
-      </ul>
-      <button onClick={() => alert('¡Hola desde mi componente!')} style={{
-        backgroundColor: '#4CAF50',
-        color: 'white',
-        border: 'none',
-        padding: '10px 20px',
-        borderRadius: '5px',
-        cursor: 'pointer'
+      <div style={{
+        backgroundColor: 'white',
+        borderRadius: '50%',
+        width: '100px',
+        height: '100px',
+        margin: '0 auto 20px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
       }}>
-        Saludar
+        <img
+          src="https://api.dicebear.com/7.x/avataaars/svg?seed=TuNombre"
+          alt="Avatar Estudiante"
+          style={{ width: '85px' }}
+        />
+      </div>
+
+      <h2 style={{ color: '#d81b60', margin: '10px 0', fontSize: '1.5rem' }}>Tu Nombre - Dev</h2>
+
+      <p style={{ color: '#4a4a4a', fontSize: '0.95rem', lineHeight: '1.5', minHeight: '60px' }}>
+        ¡Hola mundo! He configurado este componente para el taller de DevOps. ¡Integración continua activada!
+      </p>
+
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '8px',
+        marginTop: '15px'
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem' }}>
+          ✅ <span>React + Vite</span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem' }}>
+          ✅ <span>CI/CD con Netlify</span>
+        </div>
+      </div>
+
+      <button
+        onClick={() => alert('¡Componente desplegado con éxito! 🚀')}
+        style={{
+          background: '#d81b60',
+          color: 'white',
+          border: 'none',
+          padding: '12px 25px',
+          borderRadius: '25px',
+          marginTop: '20px',
+          cursor: 'pointer',
+          fontWeight: 'bold',
+          width: '100%',
+          boxShadow: '0 4px 15px rgba(216, 27, 96, 0.3)'
+        }}
+      >
+        ¡Saludar!
       </button>
     </div>
   );
